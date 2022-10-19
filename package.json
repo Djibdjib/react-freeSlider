@@ -2,8 +2,9 @@
   "name": "react-freeslider",
   "version": "1.0.0",
   "description": "React component to make responsive free slider",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "build": "rm -rf dist && NODE_ENV=production babel lib --out-dir dist --copy-files",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,5 +23,14 @@
   "bugs": {
     "url": "https://github.com/Djibdjib/react-freeSlider/issues"
   },
-  "homepage": "https://github.com/Djibdjib/react-freeSlider#readme"
+  "homepage": "https://github.com/Djibdjib/react-freeSlider#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.19.3",
+    "@babel/core": "^7.19.3",
+    "@babel/preset-env": "^7.19.4",
+    "@babel/preset-react": "^7.18.6"
+  },
+  "dependencies": {
+    "@babel/polyfill": "^7.12.1"
+  }
 }
