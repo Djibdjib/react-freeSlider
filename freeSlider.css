@@ -1,0 +1,30 @@
+.slideshowContainer {
+    overflow: hidden;
+    height: auto;
+    cursor: grab;
+    position: relative;
+    padding-bottom: 20px;
+}
+.slideshowContainer:active {
+    cursor: grabbing;
+}
+.slideshow {
+    position: relative;
+    height: 100%;
+    display: flex;
+    /* pointer-events: none; */
+}
+.slide {
+    flex-shrink: 0;
+}
+.slide:not(:nth-child(1)) {
+    margin-left: 10px;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.15);
+}
