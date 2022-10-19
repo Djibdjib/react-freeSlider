@@ -1,6 +1,6 @@
 {
   "name": "react-freeslider",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "React component to make responsive free slider",
   "main": "dist/index.js",
   "module": "dist/index.js",
